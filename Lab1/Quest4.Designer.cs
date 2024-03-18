@@ -46,6 +46,7 @@ namespace LTMCB_Lab1
             this.btnClose.TabIndex = 20;
             this.btnClose.Text = "Thoát";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnDel
             // 
@@ -55,6 +56,7 @@ namespace LTMCB_Lab1
             this.btnDel.TabIndex = 21;
             this.btnDel.Text = "Xoá";
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnFind
             // 
@@ -64,6 +66,7 @@ namespace LTMCB_Lab1
             this.btnFind.TabIndex = 22;
             this.btnFind.Text = "Hiện chữ";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // tbxTemp
             // 
