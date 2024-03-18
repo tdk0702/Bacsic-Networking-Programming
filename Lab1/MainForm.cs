@@ -39,6 +39,8 @@ namespace LTMCB_Lab1
         private void btnQuest4_Click(object sender, EventArgs e)
         {
 
+            Form Quest4 = new Quest4();
+            Quest4.Show();
         }
 
         private void btnQuest5_Click(object sender, EventArgs e)

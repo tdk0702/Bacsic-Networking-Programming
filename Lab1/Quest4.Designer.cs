@@ -40,37 +40,41 @@ namespace LTMCB_Lab1
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(196, 102);
+            this.btnClose.Location = new System.Drawing.Point(196, 158);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(86, 31);
             this.btnClose.TabIndex = 20;
             this.btnClose.Text = "Thoát";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(104, 102);
+            this.btnDel.Location = new System.Drawing.Point(104, 158);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(86, 31);
             this.btnDel.TabIndex = 21;
             this.btnDel.Text = "Xoá";
             this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(12, 102);
+            this.btnFind.Location = new System.Drawing.Point(12, 158);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(86, 31);
             this.btnFind.TabIndex = 22;
             this.btnFind.Text = "Hiện chữ";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // tbxTemp
             // 
             this.tbxTemp.Location = new System.Drawing.Point(12, 73);
+            this.tbxTemp.Multiline = true;
             this.tbxTemp.Name = "tbxTemp";
             this.tbxTemp.ReadOnly = true;
-            this.tbxTemp.Size = new System.Drawing.Size(270, 20);
+            this.tbxTemp.Size = new System.Drawing.Size(270, 79);
             this.tbxTemp.TabIndex = 18;
             // 
             // lbTemp
@@ -88,6 +92,7 @@ namespace LTMCB_Lab1
             this.tbxNum.Name = "tbxNum";
             this.tbxNum.Size = new System.Drawing.Size(100, 20);
             this.tbxNum.TabIndex = 19;
+            this.tbxNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxNum_KeyDown);
             // 
             // lbNum
             // 
@@ -102,7 +107,7 @@ namespace LTMCB_Lab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 155);
+            this.ClientSize = new System.Drawing.Size(290, 195);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnFind);
