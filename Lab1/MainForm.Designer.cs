@@ -46,7 +46,7 @@ namespace LTMCB_Lab1
             this.btnQuest1.Name = "btnQuest1";
             this.btnQuest1.Size = new System.Drawing.Size(87, 27);
             this.btnQuest1.TabIndex = 0;
-            this.btnQuest1.Text = "Bài 1";
+            this.btnQuest1.Text = "Câu 1";
             this.btnQuest1.UseVisualStyleBackColor = true;
             this.btnQuest1.Click += new System.EventHandler(this.btnQuest1_Click);
             // 
@@ -56,7 +56,7 @@ namespace LTMCB_Lab1
             this.btnQuest2.Name = "btnQuest2";
             this.btnQuest2.Size = new System.Drawing.Size(87, 27);
             this.btnQuest2.TabIndex = 0;
-            this.btnQuest2.Text = "Bài 2";
+            this.btnQuest2.Text = "Câu 2";
             this.btnQuest2.UseVisualStyleBackColor = true;
             this.btnQuest2.Click += new System.EventHandler(this.btnQuest2_Click);
             // 
