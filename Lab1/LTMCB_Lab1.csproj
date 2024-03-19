@@ -78,6 +78,18 @@
     <Compile Include="Quest4.Designer.cs">
       <DependentUpon>Quest4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Quest6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest6.Designer.cs">
+      <DependentUpon>Quest6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest8.Designer.cs">
+      <DependentUpon>Quest8.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Quest4.resx">
       <DependentUpon>Quest4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest6.resx">
+      <DependentUpon>Quest6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest8.resx">
+      <DependentUpon>Quest8.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
