@@ -45,27 +45,32 @@ namespace LTMCB_Lab1
 
         private void btnQuest5_Click(object sender, EventArgs e)
         {
-
+            //Form Quest5 = new Quest5();
+            //Quest5.Show();
         }
 
         private void btnQuest6_Click(object sender, EventArgs e)
         {
-
+            Form Quest6 = new Quest6();
+            Quest6.Show();
         }
 
         private void btnQuest7_Click(object sender, EventArgs e)
         {
-
+            //Form Quest7 = new Quest7();
+            //Quest7.Show();
         }
 
         private void btnQuest8_Click(object sender, EventArgs e)
         {
-
+            //Form Quest8 = new Quest8();
+            //Quest8.Show();
         }
 
         private void btnQuest9_Click(object sender, EventArgs e)
         {
-
+            //Form Quest9 = new Quest5();
+            //Quest9.Show();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
