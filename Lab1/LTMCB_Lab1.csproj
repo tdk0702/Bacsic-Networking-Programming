@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Quest9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest9.Designer.cs">
+      <DependentUpon>Quest9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Quest3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     <Compile Include="Quest6.Designer.cs">
       <DependentUpon>Quest6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Quest7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest7.Designer.cs">
+      <DependentUpon>Quest7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Quest8.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,8 +129,14 @@
     <EmbeddedResource Include="Quest6.resx">
       <DependentUpon>Quest6.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Quest7.resx">
+      <DependentUpon>Quest7.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Quest8.resx">
       <DependentUpon>Quest8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest9.resx">
+      <DependentUpon>Quest9.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

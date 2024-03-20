@@ -40,5 +40,10 @@ namespace LTMCB_Lab1
         {
             this.Close();
         }
+
+        private void tbxNum_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) btnFind_Click(this, new EventArgs());
+        }
     }
 }

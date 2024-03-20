@@ -54,6 +54,7 @@ namespace LTMCB_Lab1
             this.tbxNum1.Name = "tbxNum1";
             this.tbxNum1.Size = new System.Drawing.Size(100, 20);
             this.tbxNum1.TabIndex = 1;
+            this.tbxNum1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxNum1_KeyDown);
             // 
             // lbNum2
             // 
@@ -70,6 +71,7 @@ namespace LTMCB_Lab1
             this.tbxNum2.Name = "tbxNum2";
             this.tbxNum2.Size = new System.Drawing.Size(100, 20);
             this.tbxNum2.TabIndex = 1;
+            this.tbxNum2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxNum2_KeyDown);
             // 
             // lbSum
             // 

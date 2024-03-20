@@ -30,5 +30,15 @@ namespace LTMCB_Lab1
                 tbxSum.Text = sum.ToString();
             }
         }
+
+        private void tbxNum1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) btnFind_Click(this, new EventArgs());
+        }
+
+        private void tbxNum2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) btnFind_Click(this, new EventArgs());
+        }
     }
 }

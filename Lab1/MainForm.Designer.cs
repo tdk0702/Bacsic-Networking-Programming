@@ -55,7 +55,7 @@ namespace LTMCB_Lab1
             this.btnQuest2.Location = new System.Drawing.Point(105, 12);
             this.btnQuest2.Name = "btnQuest2";
             this.btnQuest2.Size = new System.Drawing.Size(87, 27);
-            this.btnQuest2.TabIndex = 0;
+            this.btnQuest2.TabIndex = 1;
             this.btnQuest2.Text = "Câu 2";
             this.btnQuest2.UseVisualStyleBackColor = true;
             this.btnQuest2.Click += new System.EventHandler(this.btnQuest2_Click);
@@ -65,7 +65,7 @@ namespace LTMCB_Lab1
             this.btnQuest4.Location = new System.Drawing.Point(12, 45);
             this.btnQuest4.Name = "btnQuest4";
             this.btnQuest4.Size = new System.Drawing.Size(87, 27);
-            this.btnQuest4.TabIndex = 0;
+            this.btnQuest4.TabIndex = 3;
             this.btnQuest4.Text = "Câu 4";
             this.btnQuest4.UseVisualStyleBackColor = true;
             this.btnQuest4.Click += new System.EventHandler(this.btnQuest4_Click);
@@ -75,7 +75,7 @@ namespace LTMCB_Lab1
             this.btnQuest5.Location = new System.Drawing.Point(105, 45);
             this.btnQuest5.Name = "btnQuest5";
             this.btnQuest5.Size = new System.Drawing.Size(87, 27);
-            this.btnQuest5.TabIndex = 0;
+            this.btnQuest5.TabIndex = 4;
             this.btnQuest5.Text = "Câu 5";
             this.btnQuest5.UseVisualStyleBackColor = true;
             this.btnQuest5.Click += new System.EventHandler(this.btnQuest5_Click);
@@ -85,7 +85,7 @@ namespace LTMCB_Lab1
             this.btnQuest7.Location = new System.Drawing.Point(12, 78);
             this.btnQuest7.Name = "btnQuest7";
             this.btnQuest7.Size = new System.Drawing.Size(87, 27);
-            this.btnQuest7.TabIndex = 0;
+            this.btnQuest7.TabIndex = 6;
             this.btnQuest7.Text = "Câu 7";
             this.btnQuest7.UseVisualStyleBackColor = true;
             this.btnQuest7.Click += new System.EventHandler(this.btnQuest7_Click);
@@ -95,7 +95,7 @@ namespace LTMCB_Lab1
             this.btnQuest8.Location = new System.Drawing.Point(105, 78);
             this.btnQuest8.Name = "btnQuest8";
             this.btnQuest8.Size = new System.Drawing.Size(87, 27);
-            this.btnQuest8.TabIndex = 0;
+            this.btnQuest8.TabIndex = 7;
             this.btnQuest8.Text = "Câu 8";
             this.btnQuest8.UseVisualStyleBackColor = true;
             this.btnQuest8.Click += new System.EventHandler(this.btnQuest8_Click);
@@ -105,7 +105,7 @@ namespace LTMCB_Lab1
             this.btnQuest3.Location = new System.Drawing.Point(198, 12);
             this.btnQuest3.Name = "btnQuest3";
             this.btnQuest3.Size = new System.Drawing.Size(87, 27);
-            this.btnQuest3.TabIndex = 0;
+            this.btnQuest3.TabIndex = 2;
             this.btnQuest3.Text = "Câu 3";
             this.btnQuest3.UseVisualStyleBackColor = true;
             this.btnQuest3.Click += new System.EventHandler(this.btnQuest3_Click);
@@ -115,7 +115,7 @@ namespace LTMCB_Lab1
             this.btnQuest6.Location = new System.Drawing.Point(198, 45);
             this.btnQuest6.Name = "btnQuest6";
             this.btnQuest6.Size = new System.Drawing.Size(87, 27);
-            this.btnQuest6.TabIndex = 0;
+            this.btnQuest6.TabIndex = 5;
             this.btnQuest6.Text = "Câu 6";
             this.btnQuest6.UseVisualStyleBackColor = true;
             this.btnQuest6.Click += new System.EventHandler(this.btnQuest6_Click);
@@ -125,7 +125,7 @@ namespace LTMCB_Lab1
             this.btnQuest9.Location = new System.Drawing.Point(198, 78);
             this.btnQuest9.Name = "btnQuest9";
             this.btnQuest9.Size = new System.Drawing.Size(87, 27);
-            this.btnQuest9.TabIndex = 0;
+            this.btnQuest9.TabIndex = 8;
             this.btnQuest9.Text = "Câu 9";
             this.btnQuest9.UseVisualStyleBackColor = true;
             this.btnQuest9.Click += new System.EventHandler(this.btnQuest9_Click);

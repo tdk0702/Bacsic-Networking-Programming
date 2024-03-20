@@ -1,7 +1,7 @@
 ﻿
 namespace LTMCB_Lab1
 {
-    partial class Quest8
+    partial class Quest7
     {
         /// <summary>
         /// Required designer variable.
@@ -29,61 +29,61 @@ namespace LTMCB_Lab1
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbxInput = new System.Windows.Forms.TextBox();
             this.lbInput = new System.Windows.Forms.Label();
-            this.btnProcess = new System.Windows.Forms.Button();
+            this.tbxInput = new System.Windows.Forms.TextBox();
+            this.btnTemp = new System.Windows.Forms.Button();
             this.tbxTemp = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // tbxInput
-            // 
-            this.tbxInput.Location = new System.Drawing.Point(89, 10);
-            this.tbxInput.Name = "tbxInput";
-            this.tbxInput.Size = new System.Drawing.Size(293, 20);
-            this.tbxInput.TabIndex = 0;
-            this.tbxInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxInput_KeyDown);
             // 
             // lbInput
             // 
             this.lbInput.AutoSize = true;
             this.lbInput.Location = new System.Drawing.Point(13, 13);
             this.lbInput.Name = "lbInput";
-            this.lbInput.Size = new System.Drawing.Size(70, 13);
+            this.lbInput.Size = new System.Drawing.Size(110, 13);
             this.lbInput.TabIndex = 1;
-            this.lbInput.Text = "Nhập dữ liệu:";
+            this.lbInput.Text = "Ngày tháng năm sinh:";
             // 
-            // btnProcess
+            // tbxInput
             // 
-            this.btnProcess.Location = new System.Drawing.Point(16, 37);
-            this.btnProcess.Name = "btnProcess";
-            this.btnProcess.Size = new System.Drawing.Size(366, 23);
-            this.btnProcess.TabIndex = 2;
-            this.btnProcess.Text = "Xử lý dữ liệu";
-            this.btnProcess.UseVisualStyleBackColor = true;
-            this.btnProcess.Click += new System.EventHandler(this.btnProcess_Click);
+            this.tbxInput.Location = new System.Drawing.Point(16, 30);
+            this.tbxInput.Name = "tbxInput";
+            this.tbxInput.Size = new System.Drawing.Size(118, 20);
+            this.tbxInput.TabIndex = 0;
+            this.tbxInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxInput_KeyDown);
+            // 
+            // btnTemp
+            // 
+            this.btnTemp.Location = new System.Drawing.Point(140, 12);
+            this.btnTemp.Name = "btnTemp";
+            this.btnTemp.Size = new System.Drawing.Size(56, 38);
+            this.btnTemp.TabIndex = 2;
+            this.btnTemp.Text = "OK";
+            this.btnTemp.UseVisualStyleBackColor = true;
+            this.btnTemp.Click += new System.EventHandler(this.btnTemp_Click);
             // 
             // tbxTemp
             // 
-            this.tbxTemp.Location = new System.Drawing.Point(16, 66);
+            this.tbxTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxTemp.Location = new System.Drawing.Point(16, 56);
             this.tbxTemp.Multiline = true;
             this.tbxTemp.Name = "tbxTemp";
             this.tbxTemp.ReadOnly = true;
-            this.tbxTemp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbxTemp.Size = new System.Drawing.Size(366, 211);
-            this.tbxTemp.TabIndex = 99;
-            this.tbxTemp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxInput_KeyDown);
+            this.tbxTemp.Size = new System.Drawing.Size(180, 54);
+            this.tbxTemp.TabIndex = 1;
+            this.tbxTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Quest8
+            // Quest7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 289);
-            this.Controls.Add(this.btnProcess);
-            this.Controls.Add(this.lbInput);
+            this.ClientSize = new System.Drawing.Size(208, 122);
+            this.Controls.Add(this.btnTemp);
             this.Controls.Add(this.tbxTemp);
             this.Controls.Add(this.tbxInput);
-            this.Name = "Quest8";
-            this.Text = "Quest8";
+            this.Controls.Add(this.lbInput);
+            this.Name = "Quest7";
+            this.Text = "Quest7";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,9 +91,9 @@ namespace LTMCB_Lab1
 
         #endregion
 
-        private System.Windows.Forms.TextBox tbxInput;
         private System.Windows.Forms.Label lbInput;
-        private System.Windows.Forms.Button btnProcess;
+        private System.Windows.Forms.TextBox tbxInput;
+        private System.Windows.Forms.Button btnTemp;
         private System.Windows.Forms.TextBox tbxTemp;
     }
 }

@@ -21,7 +21,7 @@ namespace LTMCB_Lab1
         {
             string[] NumList = { "Không", "Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín" };
             string text = "";
-            if (n1 == 0 && n2 == 0 && n3 == 0) return text;
+            if (n1 == 0 && n2 == 0 && n3 == 0) return string.Empty;
             if (n1 == 0 && n2 == 0 && n3 != 0){
                 text = NumList[n3] + " Trăm";
                 return text;
@@ -32,7 +32,7 @@ namespace LTMCB_Lab1
                 if (n2 == 0) text = " " + "Lẻ" + text;
                 else{
                     text = " " + "Mươi" + text;
-                    text = NumList[n2] + text;
+                    text = " " + NumList[n2] + text;
                 }
             }
             return NumList[n3] + " " + "Trăm" + text;
@@ -40,7 +40,7 @@ namespace LTMCB_Lab1
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-            string[] NumType = {"Ngàn", "Triệu", "Tỷ" };
+            string[] NumType = {"", "Ngàn", "Triệu", "Tỷ" };
             long num = 0;
             int[] NumArr = new int[12];
             if (tbxNum.Text.Trim().Length != 12 || !long.TryParse(tbxNum.Text.Trim(), out num))
@@ -53,14 +53,17 @@ namespace LTMCB_Lab1
                 num /= 10; 
             }
             string hrdtext = "", fulltext = "";
-            int j = 0;
+            int j = -1;
+            bool comma = false;
             for (int i = 0; i < 4; i++)
             {
+                j = (j + 1) % 4;
                 hrdtext = str_Hungred(NumArr[i * 3], NumArr[i * 3 + 1], NumArr[i * 3 + 2]);
                 if (hrdtext == "") continue;
-                if (i > 0) hrdtext += " " + NumType[j] + ", ";
+                hrdtext += " " + NumType[j];
+                if (!comma) comma = true;
+                else hrdtext += ", ";
                 fulltext = hrdtext + fulltext;
-                j = (j + 1) % 3;
             }
             tbxTemp.Text = fulltext;
         }
