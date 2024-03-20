@@ -26,3 +26,7 @@ D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.csproj.GenerateResource.cache
 D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.csproj.CoreCompileInputs.cache
 D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.exe
 D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.pdb
+D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest6.resources
+D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest8.resources
+D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest7.resources
+D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest9.resources

@@ -91,6 +91,7 @@ namespace LTMCB_Lab1
             this.tbxNum.Name = "tbxNum";
             this.tbxNum.Size = new System.Drawing.Size(100, 20);
             this.tbxNum.TabIndex = 12;
+            this.tbxNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxNum_KeyDown);
             // 
             // lbNum
             // 
