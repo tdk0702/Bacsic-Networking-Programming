@@ -80,7 +80,7 @@ namespace LTMCB_Lab1
 
         private void btnTemp_Click(object sender, EventArgs e)
         {
-            string[] astrology = {"Bạch Dương", "Kim Ngưu", "Song Tử", "Cự Giải", "Sư Tử",
+            string[] Astrology = {"Bạch Dương", "Kim Ngưu", "Song Tử", "Cự Giải", "Sư Tử",
                 "Xử Nữ", "Thiên Bình", "Thần Nông", "Nhân Mã", "Ma Kết", "Bảo Bình", "Song Ngư"};
             DateTime dt = new DateTime();
             try
@@ -91,8 +91,9 @@ namespace LTMCB_Lab1
             {
                 MessageBox.Show("Ngày sinh không hợp lệ");
                 tbxTemp.Text = string.Empty;
+                return;
             }
-            tbxTemp.Text = astrology[getVal(dt)];
+            tbxTemp.Text = Astrology[getVal(dt)];
         }
 
         private void tbxInput_KeyDown(object sender, KeyEventArgs e)

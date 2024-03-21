@@ -17,11 +17,6 @@ namespace LTMCB_Lab1.Quest5
             InitializeComponent();
         }
 
-        private void openTicket(int val)
-        {
-
-        }
-
         private void btnGo1_Click(object sender, EventArgs e)
         {
 

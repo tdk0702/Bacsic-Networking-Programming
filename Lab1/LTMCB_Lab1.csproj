@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Quest5\ChooseTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest5\ChooseTicket.Designer.cs">
+      <DependentUpon>ChooseTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest5\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest5\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest5\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest5\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Quest9.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +144,12 @@
     <EmbeddedResource Include="Quest4.resx">
       <DependentUpon>Quest4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Quest5\ChooseTicket.resx">
+      <DependentUpon>ChooseTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest5\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Quest6.resx">
       <DependentUpon>Quest6.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,5 +175,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

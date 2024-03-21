@@ -30,3 +30,5 @@ D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest6.resources
 D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest8.resources
 D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest7.resources
 D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest9.resources
+D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest5.ChooseTicket.resources
+D:\Projects\C#\repo\Lab1\obj\Debug\LTMCB_Lab1.Quest5.Home.resources

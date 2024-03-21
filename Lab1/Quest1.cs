@@ -18,9 +18,9 @@ namespace LTMCB_Lab1
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            int num1 = 0, num2 = 0;
+            long num1 = 0, num2 = 0;
             long sum;
-            if (!int.TryParse(tbxNum1.Text, out num1)|| !int.TryParse(tbxNum2.Text.Trim(), out num2))
+            if (!long.TryParse(tbxNum1.Text, out num1)|| !long.TryParse(tbxNum2.Text.Trim(), out num2))
             {
                 MessageBox.Show("Vui lòng nhập số nguyên !");
             }
@@ -33,12 +33,12 @@ namespace LTMCB_Lab1
 
         private void tbxNum1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) btnFind_Click(this, new EventArgs());
+            if (e.KeyCode == Keys.Enter) btnCal_Click(this, new EventArgs());
         }
 
         private void tbxNum2_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) btnFind_Click(this, new EventArgs());
+            if (e.KeyCode == Keys.Enter) btnCal_Click(this, new EventArgs());
         }
     }
 }
