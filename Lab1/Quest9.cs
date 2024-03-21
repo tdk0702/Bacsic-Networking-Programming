@@ -46,9 +46,13 @@ namespace LTMCB_Lab1
                 lsbShow.Items.RemoveAt(lsbShow.SelectedIndex);
         }
 
-        private void btnDel_KeyDown(object sender, KeyEventArgs e)
+        private void btnDel_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.KeyCode == Keys.X) lsbShow.Items.Clear();
+            if (e.Button == MouseButtons.Right)
+            {
+                DialogResult drs = MessageBox.Show("Bạn có chắc muốn xoá tất cả ?", "Lưu ý", MessageBoxButtons.YesNo);
+                if (drs == DialogResult.Yes) lsbShow.Items.Clear();
+            }
         }
     }
 }

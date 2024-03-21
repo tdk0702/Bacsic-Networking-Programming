@@ -46,12 +46,51 @@ namespace LTMCB_Lab1
             return "(Không Đạt)";
         }
 
+        private int checkRank(float scr)
+        {
+            if (scr >= (float)6.5) return 0;
+            if (scr >= (float)5) return 1;
+            if (scr >= (float)3.5) return 2;
+            if (scr >= (float)2) return 3;
+            return 4;
+        }
+        private int checkAvgRank(float scr)
+        {
+            if (scr >= (float)8) return 0;
+            if (scr >= (float)6.5) return 1;
+            if (scr >= (float)5) return 2;
+            if (scr >= (float)3.5) return 3;
+            return 4;
+        }
+        private string Ranking(float avg, int check)
+        {
+            int avgcheck = Math.Max(checkAvgRank(avg),check);
+
+            switch (avgcheck)
+            {
+                case 0:
+                    return "Giỏi";
+                case 1:
+                    return "Khá";
+                case 2:
+                    return "Trung Bình";
+                case 3:
+                    return "Yếu";
+                case 4:
+                    return "Kém";
+                default:
+                    MessageBox.Show("Dữ liệu nhập vào có sai xót");
+                    return "Invalid!";
+            }
+            //return "Invalid!";
+        }
+
         private void btnProcess_Click(object sender, EventArgs e)
         {
             string text = tbxInput.Text + ",",
                 name = splitInfo(ref text, ',');
             float score = 0, avg = 0, max = 0, min = 10;
-            int i = 0;
+            int i = 0, check = -1, rankcheck = -1;
             string temp = "Họ và tên: " + name + Environment.NewLine;
             do
             {
@@ -62,6 +101,8 @@ namespace LTMCB_Lab1
                     MessageBox.Show("Vui lòng nhập đúng cấu trúc");
                 }
                 i++;
+                check = checkRank(score);
+                if (rankcheck < check) rankcheck = check;
                 avg += score;
                 if (max < score) max = score;
                 if (min > score) min = score;
@@ -69,7 +110,7 @@ namespace LTMCB_Lab1
                     + " " + isPassed(score) + Environment.NewLine;
             }
             while (text.IndexOf(',') != -1);
-            temp += "Điểm trung bình: " + avg / ((float)i) + Environment.NewLine;
+            temp += "Điểm trung bình: " + avg / ((float)i) + " (" + Ranking(avg, rankcheck) + ")" + Environment.NewLine;
             temp += "Điểm cao nhất: " + max + Environment.NewLine;
             temp += "Điểm nhỏ nhất: " + min + Environment.NewLine;
             tbxTemp.Text = temp;

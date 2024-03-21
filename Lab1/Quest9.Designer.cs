@@ -83,8 +83,8 @@ namespace LTMCB_Lab1
             this.btnDel.TabIndex = 4;
             this.btnDel.Text = "Xoá món";
             this.btnDel.UseVisualStyleBackColor = true;
-            this.btnDel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnDel_KeyDown);
             this.btnDel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnDel_MouseClick);
+            this.btnDel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnDel_MouseDown);
             // 
             // btnFind
             // 
@@ -98,12 +98,14 @@ namespace LTMCB_Lab1
             // 
             // tbxTemp
             // 
+            this.tbxTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxTemp.Location = new System.Drawing.Point(12, 190);
             this.tbxTemp.Multiline = true;
             this.tbxTemp.Name = "tbxTemp";
             this.tbxTemp.ReadOnly = true;
-            this.tbxTemp.Size = new System.Drawing.Size(355, 37);
+            this.tbxTemp.Size = new System.Drawing.Size(355, 48);
             this.tbxTemp.TabIndex = 99;
+            this.tbxTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -118,7 +120,7 @@ namespace LTMCB_Lab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 239);
+            this.ClientSize = new System.Drawing.Size(379, 250);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbxTemp);
             this.Controls.Add(this.btnFind);
