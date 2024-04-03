@@ -10,7 +10,6 @@ D:\Projects\C#\repo\22520702-TruongDuyKhoi\Lab2\obj\Debug\Lab2.Form1.resources
 D:\Projects\C#\repo\22520702-TruongDuyKhoi\Lab2\obj\Debug\Lab2.Form2.resources
 D:\Projects\C#\repo\22520702-TruongDuyKhoi\Lab2\obj\Debug\Lab2.MainForm.resources
 D:\Projects\C#\repo\22520702-TruongDuyKhoi\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
-D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
 D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.Form1.resources
 D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.Form2.resources
 D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.Form3.resources
@@ -28,3 +27,7 @@ D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.Form4.FormWrite.resources
 D:\Projects\C#\repo\22520702-TruongDuyKhoi\Lab2\obj\Debug\Lab2.Form3.resources
 D:\Projects\C#\repo\22520702-TruongDuyKhoi\Lab2\obj\Debug\Lab2.Form4.AddForm.resources
 D:\Projects\C#\repo\22520702-TruongDuyKhoi\Lab2\obj\Debug\Lab2.Form4.FormWrite.resources
+D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
+D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.Form5.AddMovie.resources
+D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.Form5.ChooseTicket.resources
+D:\Projects\C#\LTMCB\LTMCB\Lab2\obj\Debug\Lab2.Form5.Home.resources

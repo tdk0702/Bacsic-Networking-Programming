@@ -76,6 +76,30 @@
     <Compile Include="Form4\FormWrite.Designer.cs">
       <DependentUpon>FormWrite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5\AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5\AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5\ChooseTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5\ChooseTicket.Designer.cs">
+      <DependentUpon>ChooseTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +122,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4\FormWrite.resx">
       <DependentUpon>FormWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5\AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5\ChooseTicket.resx">
+      <DependentUpon>ChooseTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -125,6 +158,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="resources\dataform5.txt" />
     <Content Include="resources\input.txt" />
     <Content Include="resources\output.txt" />
     <Content Include="resources\input3.txt" />

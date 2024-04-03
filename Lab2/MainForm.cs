@@ -44,8 +44,8 @@ namespace Lab2
                     f4.Show();
                     break;
                 case 4:
-                    //Form5 f = new Form5();
-                    //f.Show();
+                    Form5.Home f5 = new Form5.Home();
+                    f5.Show();
                     break;
                 case 5:
                     //Form6 f = new Form6();
