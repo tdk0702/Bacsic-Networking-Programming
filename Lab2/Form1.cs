@@ -21,7 +21,13 @@ namespace Lab2
         private void btnRead_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Text|*.txt";
             ofd.ShowDialog();
+            if (string.IsNullOrEmpty(ofd.FileName))
+            {
+                MessageBox.Show("Vui lòng chọn file.");
+                return;
+            }
             FileStream fs = new FileStream(ofd.FileName, FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader sr = new StreamReader(fs);
             string text = sr.ReadToEnd();
@@ -33,7 +39,13 @@ namespace Lab2
         private void btnWrite_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Text|*.txt";
             ofd.ShowDialog();
+            if (string.IsNullOrEmpty(ofd.FileName))
+            {
+                MessageBox.Show("Vui lòng chọn file.");
+                return;
+            }
             FileStream fs = new FileStream(ofd.FileName, FileMode.Create, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fs);
             string text = tbxShow.Text.ToUpper();

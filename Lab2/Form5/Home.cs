@@ -15,13 +15,14 @@ namespace Lab2.Form5
     public partial class Home : Form
     {
 
-        private static string Datapath = "resources\\data.txt";
+        //private static string Datapath = "resources\\data.txt";
         public static string Connectpath = @"Data source=.\SQLExpress;Initial Catalog=MOVIE;Integrated Security = True";
         public class Movie
         {
             public string name, origin, id;
             public long price;
             public List<int> arrRoom;
+            public string info;
             public Movie()
             {
                 name = origin = id = string.Empty;
@@ -35,6 +36,9 @@ namespace Lab2.Form5
                 this.origin = origin;
                 this.price = price;
                 this.arrRoom = arrRoom;
+            }
+            public string setInfo() {
+                return string.Format("Tên gốc: {0}\r\nGiá vé chuẩn: {1}.000đ\r\nPhòng chiếu: {2}", this.origin, this.price.ToString(), string.Join(", ", this.arrRoom));
             }
         }
         public static List<Movie> MovieList = new List<Movie>();
@@ -56,6 +60,7 @@ namespace Lab2.Form5
         }
         private void readData(DataTable dt)
         {
+            MovieList = new List<Movie>(); 
             pgbMovie.Maximum = dt.Rows.Count;
             pgbMovie.Value = 0;
             Movie movie;
@@ -64,14 +69,14 @@ namespace Lab2.Form5
             List<int> arr;
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                id = dt.Rows[i]["id"].ToString();
+                id = dt.Rows[i]["Id"].ToString();
                 name = dt.Rows[i]["Mname"].ToString();
                 origin = dt.Rows[i]["Origin"].ToString();
                 price = long.Parse(dt.Rows[i]["Price"].ToString());
-                queryArr = "SELECT idtheater FROM MOVIE.dbo.THEATERS WHERE id=" + id;
+                queryArr = "SELECT Idtheater FROM THEATERS WHERE Id=" + id;
                 DataTable dta = get_DataTable(queryArr);
                 arr = new List<int>();
-                for(int j=0;j< dta.Rows.Count;j++)
+                for(int j=0;j < dta.Rows.Count; j++)
                 {
                     arr.Add(int.Parse(dta.Rows[j]["Idtheater"].ToString()));
                 }
@@ -105,27 +110,22 @@ namespace Lab2.Form5
             if (int.Parse(lbTitle.Tag.ToString()) >= (MovieList.Count / 4) - 1) btnNext.Enabled = false;
             showMovie(int.Parse(lbTitle.Tag.ToString()));
         }
-
-        private string showContext(Movie m)
-        {
-            return string.Format("Tên gốc: {0}\r\nGiá vé chuẩn: {1}.000đ\r\nPhòng chiếu: 1, 2, 3",m.origin, m.price.ToString(), string.Join(", ", m.arrRoom));
-        }
         private void showMovie(int pos)
         {
             gbxMovie1.Text = MovieList[pos * 4].name;
-            lbMovie1.Text = showContext(MovieList[pos * 4]); 
+            lbMovie1.Text = MovieList[pos * 4].setInfo(); 
             btnGo1.Visible = true;
             if (pos * 4 + 1 >= MovieList.Count) return;
             gbxMovie2.Text = MovieList[pos * 4 + 1].name;
-            lbMovie2.Text = showContext(MovieList[pos * 4 + 1]);
+            lbMovie2.Text = MovieList[pos * 4 + 1].setInfo();
             btnGo2.Visible = true;
             if (pos * 4 + 2 >= MovieList.Count) return;
             gbxMovie3.Text = MovieList[pos * 4 + 2].name;
-            lbMovie3.Text = showContext(MovieList[pos * 4 + 2]);
+            lbMovie3.Text = MovieList[pos * 4 + 2].setInfo();
             btnGo3.Visible = true;
             if (pos * 4 + 3 >= MovieList.Count) return;
             gbxMovie4.Text = MovieList[pos * 4 + 3].name;
-            lbMovie4.Text = showContext(MovieList[pos * 4 + 3]);
+            lbMovie4.Text = MovieList[pos * 4 + 3].setInfo();
             btnGo4.Visible = true;
         }
 
@@ -158,27 +158,29 @@ namespace Lab2.Form5
 
         private void btnGo1_Click(object sender, EventArgs e)
         {
-            openSeatForm(int.Parse(lbTitle.Tag.ToString()));
+            openSeatForm(int.Parse(lbTitle.Tag.ToString())*4);
         }
 
         private void btnGo2_Click(object sender, EventArgs e)
         {
-            openSeatForm(int.Parse(lbTitle.Tag.ToString()) + 1);
+            openSeatForm(int.Parse(lbTitle.Tag.ToString())*4 + 1);
         }
 
         private void btnGo3_Click(object sender, EventArgs e)
         {
-            openSeatForm(int.Parse(lbTitle.Tag.ToString()) + 2);
+            openSeatForm(int.Parse(lbTitle.Tag.ToString())*4 + 2);
         }
 
         private void btnGo4_Click(object sender, EventArgs e)
         {
-            openSeatForm(int.Parse(lbTitle.Tag.ToString()) + 3);
+            openSeatForm(int.Parse(lbTitle.Tag.ToString())*4 + 3);
         }
         private void openSeatForm(int pos)
         {
-            ChooseTicket ct = new ChooseTicket();
+            Seat.MovieChosen = MovieList[pos];
+            Seat ct = new Seat();
             ct.ShowDialog();
+
         }
     }
 }

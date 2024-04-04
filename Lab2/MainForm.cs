@@ -21,6 +21,38 @@ namespace Lab2
         private void comboBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) btnChoose_Click(this, new EventArgs());
+            
+            switch (e.KeyCode)
+            {
+                case Keys.D1:
+                case Keys.NumPad1:
+                    cbxChoose.SelectedIndex = 0;
+                    break;
+                case Keys.D2:
+                case Keys.NumPad2:
+                    cbxChoose.SelectedIndex = 1;
+                    break;
+                case Keys.D3:
+                case Keys.NumPad3:
+                    cbxChoose.SelectedIndex = 2;
+                    break;
+                case Keys.D4:
+                case Keys.NumPad4:
+                    cbxChoose.SelectedIndex = 3;
+                    break;
+                case Keys.D5:
+                case Keys.NumPad5:
+                    cbxChoose.SelectedIndex = 4;
+                    break;
+                case Keys.D6:
+                case Keys.NumPad6:
+                    cbxChoose.SelectedIndex = 5;
+                    break;
+                case Keys.D7:
+                case Keys.NumPad7:
+                    cbxChoose.SelectedIndex = 6;
+                    break;
+            }
         }
 
         private void btnChoose_Click(object sender, EventArgs e)
@@ -48,12 +80,12 @@ namespace Lab2
                     f5.Show();
                     break;
                 case 5:
-                    //Form6 f = new Form6();
-                    //f.Show();
+                    Form6.Menu f6 = new Form6.Menu();
+                    f6.Show();
                     break;
                 case 6:
-                    //Form7 f = new Form7();
-                    //f.Show();
+                    Form7 f7 = new Form7();
+                    f7.Show();
                     break;
                 default:
                     MessageBox.Show("Vui lòng chọn câu !");

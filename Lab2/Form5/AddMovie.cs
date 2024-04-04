@@ -17,28 +17,44 @@ namespace Lab2.Form5
         {
             InitializeComponent();
         }
-        private void inputData(string name, string origin, int price, List<int> arr)
+
+        private void upDate(string query)
         {
-            string id = Home.MovieList.Count.ToString();
-            while (id.Length < 3) id = "0" + id;
-            string insertcmd = string.Format("INSERT INTO INFO VALUES({0},N'{1}',N'{2}',{3})",id, name, origin, price.ToString());
             SqlConnection sqlConnection = new SqlConnection(Home.Connectpath);
             sqlConnection.Open();
-            SqlCommand cmd = new SqlCommand(insertcmd, sqlConnection);
+            SqlCommand cmd = new SqlCommand(query, sqlConnection);
             cmd.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+
+        private DataTable get_DataTable(string query)
+        {
+            SqlConnection SQLConnect = new SqlConnection(Home.Connectpath);
+            SQLConnect.Open();
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand(query, SQLConnect);
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            SQLConnect.Close();
+            return dt;
+        }
+        private void inputData(string name, string origin, int price, List<int> arr)
+        {
+            string insertcmd = string.Format("INSERT INTO INFO VALUES(N'{0}',N'{1}',{2})",name, origin, price.ToString());
+            upDate(insertcmd);
+            DataTable dt = get_DataTable(string.Format("Select Id from INFO where Mname = N'{0}',Origin=N'{1}',Price={3}", name, origin, price.ToString()));
+            string id = dt.Rows[0]["Id"].ToString();
             foreach (int num in arr)
             {
                 insertcmd = string.Format("INSERT INTO THEATERS VALUES({0},{1})",id, num.ToString());
-                cmd = new SqlCommand(insertcmd, sqlConnection);
-                cmd.ExecuteNonQuery();
+                upDate(insertcmd);
             }
-            sqlConnection.Close();
+            MessageBox.Show("Đã thêm dữ liệu Movie");
         }
         private void getDataFormtbxData(string data)
         {
             List<int> arr = new List<int>();
-            string id = Home.MovieList.Count.ToString();
-            while (id.Length < 3) id = "0" + id;
             string[] dataArr = data.Split(' ');
             if (dataArr.Length<4)
             {
@@ -60,7 +76,16 @@ namespace Lab2.Form5
             {
                 MessageBox.Show("Tên phòng chiếu phải là một số nguyên. Err: " + expt.ToString());
             }
-            string insertcmd = string.Format("INSERT INTO INFO VALUES({0},N'{1}',N'{2}',{3})",id, dataArr[0], dataArr[1], price.ToString());
+            string insertcmd = string.Format("INSERT INTO INFO VALUES(N'{0}',N'{1}',{2})", dataArr[0], dataArr[1], price.ToString());
+            upDate(insertcmd);
+            DataTable dt = get_DataTable(string.Format("Select Id from INFO where Mname = N'{0}',Origin=N'{1}',Price={3}", dataArr[0], dataArr[1], price));
+            string id = dt.Rows[0]["Id"].ToString();
+            foreach (int num in arr)
+            {
+                insertcmd = string.Format("INSERT INTO THEATERS VALUES({0},{1})", id, num.ToString());
+                upDate(insertcmd);
+            }
+            MessageBox.Show("Đã thêm dữ liệu Movie");
         }
         private void tbxData_KeyDown(object sender, KeyEventArgs e)
         {

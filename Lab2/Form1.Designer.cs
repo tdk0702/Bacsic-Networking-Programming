@@ -76,7 +76,7 @@ namespace Lab2
             this.Controls.Add(this.btnRead);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.Text = "Form1";
+            this.Text = "s";
             this.ResumeLayout(false);
             this.PerformLayout();
 

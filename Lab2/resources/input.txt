@@ -1,3 +1,2 @@
-﻿Hello
-I'm TDK
-This is Lab 2 in Basic Network Programming
+Hello
+This is TDK
