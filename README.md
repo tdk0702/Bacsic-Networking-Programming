@@ -11,7 +11,8 @@ Lecturer: Phan Trung Phat
 
 ## Progress
  - Completed Lab 1
- - Completing Lab 2
+ - Completed Lab 2
+ - Start working Lab3
 
 ## License
 Created by TDK
