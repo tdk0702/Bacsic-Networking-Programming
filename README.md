@@ -1,6 +1,10 @@
-# BASIC NETWORK PROGRAMMING
-## All Labs in class NT106.O21.1
+<div align="center">
+<h1 align="center"> BASIC NETWORK PROGRAMMING
+</h1>
 
+<h2 align="center"> All Labs in class NT106.O21.1
+</h2>
+</div>
 This is TDK repository, thank for coming ! 
 
 ## Infomation
