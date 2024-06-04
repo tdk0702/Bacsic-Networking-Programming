@@ -6,7 +6,7 @@
 </div>
 
 This is our repository, the place we show what we have done for this project.  
-Thank all you for coming with us! 
+Thank all you for coming to see our project! 
 
 ## Infomation 
 Class: NT106.O21.1 - Network Programming for Beginners  
@@ -16,9 +16,9 @@ Lecturer: Phan Trung Phat
 
 | | Full name | Student ID | Github |
 | ------ | ------ | ------ | ------|
-| 1 | Trương Duy Khôi | 22520702 | **It's me ^^** |
-| 2 | Tiền Đức Anh Hào | 22520404 | [haouit](https://github.com/haouit) |
-| 3 | Phan Quốc Đạt | 22520233 | [PhanQDat](https://github.com/PhanQDat) |
+| 1 | Trương Duy Khoi | 22520702 | **It's me ^^** |
+| 2 | Tien Đuc Anh Hao | 22520404 | [haouit](https://github.com/haouit) |
+| 3 | Phan Quoc Đat | 22520233 | [PhanQDat](https://github.com/PhanQDat) |
 
 ## Progress
  - Lab 1: **Completed** (Own)   
