@@ -1,0 +1,145 @@
+<html>
+	<style>
+		tr {
+			border-collapse:collapse;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+		td{
+			padding:0;
+			Margin:0;
+		}
+	</style>
+	<body>
+		<table class="es-content" cellspacing="0" 
+				cellpadding="0" align="center" 
+				style="table-layout:fixed !important;width:100%;"> 
+			<tbody>
+				<tr><td align="center"> 
+						<table class="es-content-body" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" 
+								style="background-color:#FFFFFF;"> 
+							<tbody>
+								<tr> 
+									<td align="center" >
+										<a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, sans-serif;font-size:14px;text-decoration:underline;color:#2CB543;">
+												<img class="adapt-img" src="{0}" 
+													alt="" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" width="600">
+										</a>
+									</td> 
+								</tr> 
+								<tr> 
+									<td align="center" style="padding:0;Margin:0;padding-top:5px;"> 
+										<table border="0" align="center" cellspacing="1" cellpadding="1" 
+										style="width: auto" class="cke_show_border"> 
+							<tbody>
+								<tr> 
+									<td style="text-align:center;font-size:13px;color:#000000;">
+										<em>
+											Vui lòng đưa thông tin này đến quầy vé để nhận vé của bạn
+										</em>
+									</td> 
+								</tr> 
+							</tbody>
+						</table>
+					</td> 
+				</tr> 
+			</tbody> 
+		</table>
+		
+		<table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;"> 
+			<tbody><tr> 
+				<td align="center" style=""> 
+					<table class="es-content-body" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;"> 
+						<tbody><tr> 
+							<td align="left" style="padding-top:20px;padding-left:20px;padding-right:20px;"> 
+								<table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;"> 
+									<tbody><tr> 
+										<td width="560" valign="top" align="center" style=""> 
+											<table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;"> 
+												<tbody><tr> 
+													<td align="left" style="">
+														<p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, sans-serif;line-height:21px;color:#333333;text-transform: uppercase;">
+															<strong>Thông tin vé</strong>
+														</p>
+													</td> 
+												</tr>
+												<tr> 
+													<td align="left" style=""> 
+														<table border="0" cellspacing="1" cellpadding="1" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:560px;" class="cke_show_border"> 
+															<tbody><tr> 
+																<td style="font-size:13px;color:#696969;">Tên khách hàng:</td> 
+																<td style="text-align:right;font-size:13px;">{1}</td> 
+															</tr>
+															<tr> 
+																<td style="font-size:13px;color:#696969;">Tên phim:</td>
+																<td style="text-align:right;font-size:13px;text-transform: uppercase;">{2}</td>
+															</tr> 
+															<tr> 
+																<td style="font-size:13px;color:#696969;">Rạp:</td> 
+																<td style="text-align:right;font-size:13px;">Movie Theater Online</td> 
+															</tr> 
+															<tr> 
+																<td style="font-size:13px;color:#696969;">Phòng chiếu:</td> 
+																<td style="text-align:right;font-size:13px;">{3}</td> 
+															</tr>
+															<tr> 
+																<td style="font-size:13px;color:#696969;">Suất chiếu:</td> 
+																<td style="text-align:right;font-size:13px;">{4}</td> 
+															</tr>
+															<tr> 
+																<td style="font-size:13px;color:#696969;">Ghế:</td> 
+																<td style="text-align:right;font-size:13px;">{5}</td> 
+															</tr>  
+															<tr> 
+																<td style="font-size:13px;color:#696969;">Giá:</td> 
+															</tr>
+															{6}
+															<!--tr>
+																<td/>
+																<td style="text-align:right;font-size:13px;">2 x<span class="price">100.000VNĐ</span> </td> 
+															</tr>
+															<tr>
+																<td/>
+																<td style="text-align:right;font-size:13px;">2 x <span class="price">45.000VNĐ</span> </td> 
+															</tr-->
+															</tbody>
+														</table>
+													</td> 
+												</tr> 
+												<tr> 
+													<td align="center" style="padding-bottom:10px;padding-top:15px;"> 
+														<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;"> 
+															<tbody><tr> 
+																<td style="padding:0;Margin:0px;border-bottom:1px dotted #CCCCCC;background:none;height:1px;width:100%;margin:0px;"></td> 
+															</tr></tbody>
+														</table>
+													</td> 
+												</tr>
+												<tr> 
+													<td align="left" style=""> 
+														<table border="0" cellspacing="1" cellpadding="1" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:560px;" class="cke_show_border"> 
+															<tbody><tr> 
+																<td style="font-size:13px;color:#696969;">Tổng Cộng:</td> 
+																<td style="text-align:right;font-size:20px;">
+																	<strong><span class="price">{7}.000VNĐ</span></strong>
+																</td> 
+															</tr> </tbody>
+														</table>
+													</td> 
+												</tr></tbody>
+											</table>
+										</td> 
+									</tr></tbody>
+								</table>
+							</td> 
+						</tr></tbody>
+					</table>
+				</td> 
+			</tr></tbody>
+		</table>
+	</body>
+</html>

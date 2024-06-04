@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2024-05-15T09:56:20.7274233Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2024-05-15T09:55:46.152931Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "2d70f577-dbaa-43f5-80ef-f3ed53a4d8ee"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "MobileDevelop"
+    }
+  }
+}

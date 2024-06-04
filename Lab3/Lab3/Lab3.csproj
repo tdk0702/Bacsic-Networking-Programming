@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77214BE8-C50A-4E59-AEA9-DE561B5964AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Lab3</RootNamespace>
+    <AssemblyName>Lab3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.118.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.118.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form2\Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2\Server.Designer.cs">
+      <DependentUpon>Server.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2\Server.Designer.cs">
+      <DependentUpon>Server.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomFood\Community.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomFood\Community.Designer.cs">
+      <DependentUpon>Community.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomFood\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomFood\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomFood\Person.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomFood\Person.Designer.cs">
+      <DependentUpon>Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater\AddTheater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater\AddTheater.Designer.cs">
+      <DependentUpon>AddTheater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater\EditHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater\EditHost.Designer.cs">
+      <DependentUpon>EditHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDP\Menu_UDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UDP\Menu_UDP.Designer.cs">
+      <DependentUpon>Menu_UDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDP\UDP_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UDP\UDP_Client.Designer.cs">
+      <DependentUpon>UDP_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDP\UDP_Sever.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UDP\UDP_Sever.Designer.cs">
+      <DependentUpon>UDP_Sever.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater\Class.cs" />
+    <Compile Include="Theater\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater\AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater\AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater\Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater\Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater\Seat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater\Seat.Designer.cs">
+      <DependentUpon>Seat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theater\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theater\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task3\Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task3\Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task3\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task3\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task3\Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task3\Server.Designer.cs">
+      <DependentUpon>Server.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task6\Client\ChatBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task6\Client\ChatBox.Designer.cs">
+      <DependentUpon>ChatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task6\Client\ImageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task6\Client\ImageView.Designer.cs">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task6\Client\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task6\Client\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task6\Client\Resources\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Task6\Communicator\Account.cs" />
+    <Compile Include="Task6\Communicator\BufferFile.cs" />
+    <Compile Include="Task6\Communicator\FileMessage.cs" />
+    <Compile Include="Task6\Communicator\Json.cs" />
+    <Compile Include="Task6\Communicator\Messages.cs" />
+    <Compile Include="Task6\Communicator\Startup.cs" />
+    <Compile Include="Task6\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task6\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task6\Server\Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task6\Server\Server.Designer.cs">
+      <DependentUpon>Server.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form2\Server.resx">
+      <DependentUpon>Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RandomFood\Community.resx">
+      <DependentUpon>Community.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomFood\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomFood\Person.resx">
+      <DependentUpon>Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater\AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater\AddTheater.resx">
+      <DependentUpon>AddTheater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater\EditHost.resx">
+      <DependentUpon>EditHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UDP\Menu_UDP.resx">
+      <DependentUpon>Menu_UDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UDP\UDP_Client.resx">
+      <DependentUpon>UDP_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UDP\UDP_Sever.resx">
+      <DependentUpon>UDP_Sever.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater\Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater\Seat.resx">
+      <DependentUpon>Seat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theater\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task3\Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task3\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task3\Server.resx">
+      <DependentUpon>Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task6\Client\ChatBox.resx">
+      <DependentUpon>ChatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task6\Client\ImageView.resx">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task6\Client\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task6\Client\Resources\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task6\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Task6\Server\Server.resx">
+      <DependentUpon>Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Theater\resources\createDB.sql" />
+    <Content Include="Theater\resources\insertDB.sql" />
+    <Content Include="Theater\resources\insertTicket.sql" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Task6\Client\Resources\file.png" />
+    <Content Include="Task6\Client\Resources\send.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>

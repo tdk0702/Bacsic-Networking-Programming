@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|d:\\projects\\github\\th1.03\\lab6\\theater\\client\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|solutionrelative:theater\\client\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|d:\\projects\\github\\th1.03\\lab6\\theater\\server\\lockclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|solutionrelative:theater\\server\\lockclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|d:\\projects\\github\\th1.03\\lab6\\theater\\server\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|solutionrelative:theater\\server\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|D:\\Projects\\GitHub\\TH1.03\\Lab6\\theater\\server\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|solutionrelative:theater\\server\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|D:\\Projects\\GitHub\\TH1.03\\Lab6\\theater\\server\\lockclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B317A900-39CA-4EE8-BA82-914920142594}|Theater\\Theater.csproj|solutionrelative:theater\\server\\lockclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LockClient.cs",
+              "DocumentMoniker": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Server\\LockClient.cs",
+              "RelativeDocumentMoniker": "Theater\\Server\\LockClient.cs",
+              "ToolTip": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Server\\LockClient.cs",
+              "RelativeToolTip": "Theater\\Server\\LockClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T12:14:25.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Server\\Admin.cs",
+              "RelativeDocumentMoniker": "Theater\\Server\\Admin.cs",
+              "ToolTip": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Server\\Admin.cs",
+              "RelativeToolTip": "Theater\\Server\\Admin.cs",
+              "ViewState": "AQIAACIBAAAAAAAAAAAUwFQBAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T11:50:30.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LockClient.cs [Design]",
+              "DocumentMoniker": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Server\\LockClient.cs",
+              "RelativeDocumentMoniker": "Theater\\Server\\LockClient.cs",
+              "ToolTip": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Server\\LockClient.cs [Design]",
+              "RelativeToolTip": "Theater\\Server\\LockClient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T11:07:20.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Admin.cs [Design]",
+              "DocumentMoniker": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Server\\Admin.cs",
+              "RelativeDocumentMoniker": "Theater\\Server\\Admin.cs",
+              "ToolTip": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Server\\Admin.cs [Design]",
+              "RelativeToolTip": "Theater\\Server\\Admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T03:08:20.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Client\\Home.cs",
+              "RelativeDocumentMoniker": "Theater\\Client\\Home.cs",
+              "ToolTip": "D:\\Projects\\GitHub\\TH1.03\\Lab6\\Theater\\Client\\Home.cs",
+              "RelativeToolTip": "Theater\\Client\\Home.cs",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAowKsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T02:50:45.164Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
