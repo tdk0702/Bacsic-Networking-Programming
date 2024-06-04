@@ -14,18 +14,19 @@ Lecturer: Phan Trung Phat
 
 ## Members of Team TH1.03
 
-| | Full name | Student ID |
-| ------ | ------ | ------ |
-| 1 | Trương Duy Khôi | 22520702 |
-| 2 | Tiền Đức Anh Hào | 22520404 |
-| 3 | Phan Quốc Đạt | 22520233 |
+| | Full name | Student ID | Github |
+| ------ | ------ | ------ | ------|
+| 1 | Trương Duy Khôi | 22520702 | **It's me ^^** |
+| 2 | Tiền Đức Anh Hào | 22520404 | [haouit](https://github.com/haouit) |
+| 3 | Phan Quốc Đạt | 22520233 | [PhanQDat](https://github.com/PhanQDat) |
 
 ## Progress
- - Lab 3: **Completed**  - [Link Lab3](https://github.com/NT106-O21/22520233-22520404-22520702)
- - Lab 4: **Completed**  - [Link Lab4](https://github.com/NT106-O21/TH1.03-Lab4)
- - Lab 5: **Completed**  (Here)
- - Lab 6: Coming Soon   
-
+ - Lab 1: **Completed** (Own)   
+ - Lab 2: **Completed** (Own)  
+ - Lab 3: **Completed** (Team)  
+ - Lab 4: **Completed** (Team)  
+ - Lab 5: **Completed** (Team)  
+ - Lab 6: **Completed** (Team)  
 ## License
 Created by TDK, a member of team TH1.03  
 This project is licensed under GNU GPL 3.0.  
