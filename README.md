@@ -21,12 +21,14 @@ Lecturer: Phan Trung Phat
 | 3 | Phan Quoc Đat | 22520233 | [PhanQDat](https://github.com/PhanQDat) |
 
 ## Progress
+
  - Lab 1: **Completed** (Own)   
  - Lab 2: **Completed** (Own)  
  - Lab 3: **Completed** (Team)  
  - Lab 4: **Completed** (Team)  
  - Lab 5: **Completed** (Team)  
  - Lab 6: **Completed** (Team)  
+
 ## License
 Created by TDK, a member of team TH1.03  
 This project is licensed under GNU GPL 3.0.  
